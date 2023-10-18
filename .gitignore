@@ -3,3 +3,9 @@ build/
 
 # Executables
 bin/
+
+# shader spv files
+shaders/*.spv
+
+# IDE config files
+.vscode

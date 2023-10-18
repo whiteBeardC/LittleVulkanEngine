@@ -27,7 +27,7 @@ class LvePipeline {
     LvePipeline(LveDevice &device, const std::string &vertFilePath, const std::string &fragFilePath,
                 const PipelineConfigInfo &configInfo);
 
-    ~LvePipeline() {}
+    ~LvePipeline();
 
     LvePipeline(const LvePipeline &) = delete;
     void operator=(const LvePipeline &) = delete;
