@@ -82,6 +82,7 @@ void LveDevice::createInstance() {
 #if defined(__APPLE__) && (__APPLE__ != 0)
     // To get over VK_ERROR_INCOMPATIBLE_DRIVER error in MacOS.
     extensions.emplace_back(VK_KHR_PORTABILITY_ENUMERATION_EXTENSION_NAME);
+    extensions.emplace_back("VK_KHR_get_physical_device_properties2");
     createInfo.flags |= VK_INSTANCE_CREATE_ENUMERATE_PORTABILITY_BIT_KHR;
 #endif
     createInfo.enabledExtensionCount = static_cast<uint32_t>(extensions.size());
